@@ -118,7 +118,7 @@ def pregunta_04():
         stop_words="english",
         token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z]+\b",
         binary=True,
-        max_df=1,
+        max_df=1.0,
         min_df=5,
     )
 
@@ -203,3 +203,5 @@ def pregunta_06():
 
     # Retorne el vector de predicciones
     return y_untagged_pred
+
+print(pregunta_01())
